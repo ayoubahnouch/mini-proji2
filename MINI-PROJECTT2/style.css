@@ -8,13 +8,13 @@
 
 
 .container{
-    padding:20;
+    padding:15px;
 }
 header{
     background-image: url(./images/bg-hero-desktop.svg);
     background-color: aliceblue;
 }
-.header-1{
+.main{
     
     height: auto;
     margin-bottom: 90px;
@@ -23,10 +23,10 @@ header{
     padding: 10px;
     
 }
-.header-1 img{
+.main img{
     height: 40px;
 }
- .header-1 button{
+ .main button{
     width: 200px;
     height: 40;
     border-radius: 20px ;
@@ -36,7 +36,7 @@ header{
     cursor: pointer;
 }
 
- .header-2{
+ .heading{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,15 +44,15 @@ header{
     padding-bottom: 20px;
 }
 
- .header-2 .left h2{
+ .heading .left h2{
     width: 20em;
     margin-bottom: 30px;
 }
- .header-2 .left p{
+ .heading .left p{
     width: 500px;
     margin-bottom: 30px;
 }
- .header-2 .left button{
+ .heading .left button{
     border-radius: 20px;
     border: #ff9cbb;
     height: 40px;
@@ -63,10 +63,10 @@ header{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
- .header-2 .right{
+ .heading .right{
     width: 50%;
 }
- .header-2 .right img{
+ .heading .right img{
     width: 35em;
     height: 333px;
 }
@@ -76,7 +76,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6%;
+    padding: 3%;
     border-radius: 40px;
     border: none;
     box-shadow: 2px 1px 6px -2px;
@@ -143,25 +143,25 @@ header{
     justify-content: space-between;
 }
 
-.f-left{
+.social{
     color: #ffff;
     padding-top: 100;
     width: 443px;
 }
 
-.f-left img{
+.social img{
     padding: 30px;
 }
-.f-left .icon i{
+.social .icon i{
     float: left;
 }
-.f-left .icon p{
+.social .icon p{
     padding-left: 40px;
     padding-bottom: 10;
     margin: auto;
 }
 
-.footer .f-centre{
+.footer .stars{
     padding-top: 100;
     width:276px ;
     display: flex;
@@ -169,38 +169,39 @@ header{
     margin-left: -160px;
     align-items: center;
 }
-.footer .f-centre a{
+.footer .stars a{
     color: #ffff;
     text-decoration: none;
     
 }
-.footer .f-centre a:hover{
+.footer .stars a:hover{
     text-decoration: underline;
 }
-.footer .f-right{
+.footer .box{
     color: #ffff;
     padding-top: 100;
     width:auto ;
     font-size:30;
     display: flex;
 }
-.footer .f-right i {
+.footer .box i {
     padding: 10px;
 }
-.footer .f-right i:hover {
-    color: #ff9cbb ;
+.footer .box i:hover {
+    color: blue ;
     cursor: pointer;
 }
+.logo-footer{
+    filter: brightness(0)invert(1) ;
+    
+}
+
 
 .Copyright{
     background-color: black;
     color: #ffff;
     text-align: right;
     padding: 20px;
-}
-.logo-footer{
-    filter: brightness(0)invert(1) ;
-    
 }
 
 @media (max-width:600px){
@@ -209,10 +210,10 @@ header{
         width: auto;
         text-align: center;
     }
-    header .header-1 img{
+    header .main img{
         width: 25%;
     }
-    header .header-1 button{
+    header .main button{
         width: 90px;
         border-radius: 20px ;
         box-shadow: 2px 3px 7px 0px;
@@ -221,26 +222,27 @@ header{
         cursor: pointer;
         position: -ms-page;
     }
-        
-     header .header-2{
+    
+            
+     header .heading{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
 
-    header .header-2 .left h2{
+    header .heading.left h2{
         width: 12em;
         margin-bottom: 20px;
         text-align: center;
         margin: auto;
     }
-    header .header-2 .left p{
+    header .heading .left p{
         width: 324px;
         text-align: center;
         margin-bottom: 20px;
     }
-    header .header-2 .left button{
+    header .heading .left button{
         border-radius: 20px;
         border: #ff9cbb;
         height: 40px;
@@ -251,10 +253,10 @@ header{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
-    header .header-2 .right{
+    header .heading.right{
         width: auto;
     }
-    header .header-2 .right img{
+    header .heading .right img{
         width: max-content;
         height: 200px;
         margin: 20px 0 20px 0;
@@ -296,14 +298,14 @@ header{
         justify-content: center;
         padding: 10px;
     }
-    .footer .f-left{
+    .footer .social{
         width: auto;
     }
-    .footer .f-centre{
+    .footer .stars{
         display: contents;
         margin-top: 10px;
     }
-    .footer .f-right{
+    .footer .box{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -325,10 +327,10 @@ header{
         width: auto;
         text-align: center;
     }
-    header .header-1 img{
+    header .main img{
         width: 25%;
     }
-    header .header-1 button{
+    header .main button{
         width: 90px;
         border-radius: 20px ;
         box-shadow: 2px 3px 7px 0px;
@@ -338,25 +340,25 @@ header{
         position: -ms-page;
     }
         
-     header .header-2{
+     header .heading{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
 
-    header .header-2 .left h2{
+    header .heading .left h2{
         width: 12em;
         margin-bottom: 20px;
         text-align: center;
         margin: auto;
     }
-    header .header-2 .left p{
-        width: 324px;
+    header .heading.left p{
+        width: 330px;
         text-align: center;
         margin-bottom: 20px;
     }
-    header .header-2 .left button{
+    header .heading .left button{
         border-radius: 20px;
         border: #ff9cbb;
         height: 40px;
@@ -367,10 +369,10 @@ header{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
-    header .header-2 .right{
+    header .heading .right{
         width: auto;
     }
-    header .header-2 .right img{
+    header .heading .right img{
         width: max-content;
         height: 200px;
         margin: 20px 0 20px 0;
@@ -412,14 +414,14 @@ header{
         justify-content: center;
         padding: 10px;
     }
-    .footer .f-left{
+    .footer .social{
         width: auto;
     }
-    .footer .f-centre{
+    .footer .stars{
         display: contents;
         margin-top: 10px;
     }
-    .footer .f-right{
+    .footer .box{
         display: flex;
         justify-content: center;
         align-items: center;
