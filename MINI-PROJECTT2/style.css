@@ -204,7 +204,7 @@ header{
     padding: 20px;
 }
 
-@media (max-width:600px){
+@media (max-width:1440px){
     header{
         margin-bottom: 90px;
         width: auto;
@@ -321,7 +321,7 @@ header{
 
 
 }
-@media (max-width:200px){
+@media (max-width:375px){
     header{
         margin-bottom: 90px;
         width: auto;
